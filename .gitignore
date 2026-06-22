@@ -1,0 +1,17 @@
+# Database
+data/*.duckdb
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports (auto-generated, no need to track)
+reports/
