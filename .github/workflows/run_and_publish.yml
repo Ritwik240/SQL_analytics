@@ -26,9 +26,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Create data directory
+        run: mkdir -p data
+
       - name: Generate data
         run: python scripts/generate_data.py
-
+        
       - name: Run queries and generate report
         run: python scripts/run_queries.py
 
